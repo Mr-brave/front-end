@@ -1,0 +1,32 @@
+In order to put images on our website,we need to use <img> element.
+!note:
+  <img>is a empty element,which means that it has no text content or closingtag.
+1.Attribe:src(title:source)
+  When we want to embed an image to a website,we can use the src attribte that the browser where the image is.The src attribute can
+use absolur and relative url.
+  -if the image and your websites html are under the same directory,the vaule of src attribute ,you can embed your image like this.
+  <img src="dinosaur.jpg">
+  -if the image was in a images subdirectory which is in the same directory of html,you can embed your image like this:
+  <img src="images/dinosaur.jpg>
+  -if the image was in a images subdirectory and the html was in a websites subdirectory,while the image  and the website are in
+  the same directory,you can embed image like this:
+  <img src="../images/dinosaur.jpg">
+2.Attribute alt(title: altnative)
+  -what the attribte is: textual description of the image
+  -why to use the attribute: used in situations where images can't be seen/displayed.
+3.Width and height attribute
+function: we can use this two attribute to specify the width and height of the image and what is important is that if the website 
+have not load the image yet,it will leave a space for the image to appear in.
+!Note: We don't use the attributes to resize the image.If you really want to resize your image ,you should uss css.
+4.Title attribute
+Function: when user put their printer on the image,it'll show further imformations about the image.
+What is more.If we want to add a caption to the image,we can use <figure> and <figcaption> elements.Just like this:
+<figure>
+  <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"
+       alt="The head and torso of a dinosaur skeleton;
+            it has a large head with long sharp teeth"
+       width="400"
+       height="341">
+  <figcaption>A T-Rex on display in the Manchester University Museum.</figcaption>
+</figure>
+  

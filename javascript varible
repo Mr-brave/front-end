@@ -1,0 +1,65 @@
+1.what is a variable:
+  A variable is a container for a value.变量就是一个容器，在这个容器里我们可以store value.value 可以是数字，字符串，对象，函数，数组等。
+  变量有一个特别的属性，那就是可以改变变量里的value。举个栗子：
+  <button>Press me</button>
+  
+  var button = document.querySelector('button');
+  
+  button.onclick = function() {
+    var name = prompt('What is your name?');
+    alert('Hello ' + name + ',nice to meet you!');
+  }
+  
+  在这个栗子中，当你按下button时会运行多行代码。第一行代码会在屏幕上丢出一个盒子，上面会要求阅读者输入他的姓名，然后在一个变量中即name中存储这个value。
+  第二行代码则会显示欢迎信息，在欢迎信息中包含从变量中拿出的名字。
+  
+  为了更好的理解变量的作用，我们来试试不用变量来完成这个栗子。如果我们不用变量，我们的代码大概就是这个样子。
+  var name = prompt('What is your name?');
+
+if (name === 'Adam') {
+  alert('Hello Adam, nice to see you!');
+} else if (name === 'Alan') {
+  alert('Hello Alan, nice to see you!');
+} else if (name === 'Bella') {
+  alert('Hello Bella, nice to see you!');
+} else if (name === 'Bianca') {
+  alert('Hello Bianca, nice to see you!');
+} else if (name === 'Chris') {
+  alert('Hello Chris, nice to see you!');
+}
+
+// ... and so on ...
+显而易见，没有变量我们的工作将会变得相当麻烦，由此可见，变量 is very very very useful.
+
+变量的另一个特别的性质就是他可以包含所有的thing，它不只可以包括数字，字符串，他也可以包含复杂的数据甚至是可以做amazing thing的函数。
+
+！！！注意我们说过，变量是包含value的容器。这里有一个重要的分别，变量并不是value本身，他们只是包含value的容器。你可以把他们看作可以装东西的箱子。
+
+声明一个变量
+  要使用一个变量，首先你得创造它，更准确地说，是声明一个变量。声明一个变量，你得先打出关键字 var，然后在后面跟着你想给这个变量取的名字。
+  
+  var myName;
+  var myAge;
+  
+  在这里，我们声明了两个分别名为myName和myAge的变量。然后，我们在browser的开发工具的console中检测这两个变量，你会发现浏览器会返回undefined的值。这
+  是因为我们还没有初始化变量。
+
+initialize variable
+  一旦我们声明了一个变量，我们就可初始化它。how?变量名 followed by '='.followed by 你想给变量的value。
+  
+  myName = 'Chris';
+  myAge = 17;
+  
+  你也可以再声明变量的同时初始化变量，例如：
+  
+  var myName = 'Chris';
+  
+  我们大部分时间都是这么做，因为这比分两行来写快捷多了。
+  
+  更新变量（update variable）
+  一旦一个变量已经有课了一个给定的值，我们可以通过简单地给变量另一个值来更新变量。例如：
+  
+  在上面的栗子加上
+  myName = 15;
+  myAge = 'Mr gao';
+  
